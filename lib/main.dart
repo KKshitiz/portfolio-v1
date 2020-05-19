@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return Provider(
       create: (context) => DeviceInfo(context),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           fontFamily: 'Poppins',
