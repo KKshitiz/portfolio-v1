@@ -23,6 +23,7 @@ String kInstagramUrl = 'https://www.instagram.com';
 
 //about
 List<String> kProfession = ['developer', 'designer', 'programmer', 'polymath'];
+int kNoOfScreens = 2;
 
 //system
 //Warning do not change this

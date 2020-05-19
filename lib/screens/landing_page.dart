@@ -1,7 +1,11 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'sidebar.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
+import 'first_page.dart';
+import 'second_page.dart';
 
 ScrollController scrollController;
 
@@ -11,10 +15,16 @@ class LandingPage extends StatefulWidget {
 }
 
 class _LandingPageState extends State<LandingPage> {
-  int noOfScreens = 5 - 1;
+  int noOfScreens = kNoOfScreens - 1;
   double screenWidth;
   double screenHeight;
   double cWidth;
+  @override
+  void dispose() {
+    scrollController.dispose();
+    super.dispose();
+  }
+
   @override
   void initState() {
     super.initState();
@@ -24,6 +34,7 @@ class _LandingPageState extends State<LandingPage> {
 
   onScroll() {
     setState(() {
+      print(scrollController.offset);
       cWidth =
           scrollController.offset * screenWidth / (noOfScreens * screenHeight);
     });
@@ -47,226 +58,16 @@ class _LandingPageState extends State<LandingPage> {
                 child: ListView(
                   controller: scrollController,
                   children: [
-                    Container(
-                      height: screenHeight,
-                      width: screenWidth,
-                      color: Colors.white,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            kAvatarName,
-                            style: TextStyle(
-                              fontSize: 50,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    'I\'m a ',
-                                    style: TextStyle(
-                                      fontSize: 40,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              TypewriterAnimatedTextKit(
-                                speed: Duration(milliseconds: 200),
-                                text: kProfession,
-                                totalRepeatCount: 1,
-                                textStyle: TextStyle(
-                                    decorationStyle: TextDecorationStyle.dashed,
-                                    fontSize: 40,
-                                    decoration: TextDecoration.underline,
-                                    decorationColor: Colors.blue),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      height: screenHeight,
-                      width: screenWidth,
-                      color: Colors.white,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            kAvatarName,
-                            style: TextStyle(
-                              fontSize: 50,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    'I\'m a ',
-                                    style: TextStyle(
-                                      fontSize: 40,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              TypewriterAnimatedTextKit(
-                                speed: Duration(milliseconds: 200),
-                                text: kProfession,
-                                totalRepeatCount: 1,
-                                textStyle: TextStyle(
-                                    decorationStyle: TextDecorationStyle.dashed,
-                                    fontSize: 40,
-                                    decoration: TextDecoration.underline,
-                                    decorationColor: Colors.blue),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      height: screenHeight,
-                      width: screenWidth,
-                      color: Colors.white,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            kAvatarName,
-                            style: TextStyle(
-                              fontSize: 50,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    'I\'m a ',
-                                    style: TextStyle(
-                                      fontSize: 40,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              TypewriterAnimatedTextKit(
-                                speed: Duration(milliseconds: 200),
-                                text: kProfession,
-                                totalRepeatCount: 1,
-                                textStyle: TextStyle(
-                                    decorationStyle: TextDecorationStyle.dashed,
-                                    fontSize: 40,
-                                    decoration: TextDecoration.underline,
-                                    decorationColor: Colors.blue),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      height: screenHeight,
-                      width: screenWidth,
-                      color: Colors.white,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            kAvatarName,
-                            style: TextStyle(
-                              fontSize: 50,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    'I\'m a ',
-                                    style: TextStyle(
-                                      fontSize: 40,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              TypewriterAnimatedTextKit(
-                                speed: Duration(milliseconds: 200),
-                                text: kProfession,
-                                totalRepeatCount: 1,
-                                textStyle: TextStyle(
-                                    decorationStyle: TextDecorationStyle.dashed,
-                                    fontSize: 40,
-                                    decoration: TextDecoration.underline,
-                                    decorationColor: Colors.blue),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      height: screenHeight,
-                      width: screenWidth,
-                      color: Colors.white,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            kAvatarName,
-                            style: TextStyle(
-                              fontSize: 50,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    'I\'m a ',
-                                    style: TextStyle(
-                                      fontSize: 40,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              TypewriterAnimatedTextKit(
-                                speed: Duration(milliseconds: 200),
-                                text: kProfession,
-                                totalRepeatCount: 1,
-                                textStyle: TextStyle(
-                                    decorationStyle: TextDecorationStyle.dashed,
-                                    fontSize: 40,
-                                    decoration: TextDecoration.underline,
-                                    decorationColor: Colors.blue),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
+                    FirstPage(
+                        screenHeight: screenHeight, screenWidth: screenWidth),
+                    SecondPage(
+                        screenHeight: screenHeight, screenWidth: screenWidth),
                   ],
                 ),
               ),
             ],
           ),
+          //progress bar indicator
           Positioned(
             left: 0,
             top: 0,
@@ -274,6 +75,27 @@ class _LandingPageState extends State<LandingPage> {
               height: 8,
               width: cWidth,
               color: Colors.blue,
+            ),
+          ),
+          //rotating indicator
+          Positioned(
+            right: 20,
+            bottom: 20,
+            child: AnimatedBuilder(
+              animation: scrollController,
+              child: Container(
+                width: 200.0,
+                height: 200.0,
+                child: const Center(
+                  child: Image(image: AssetImage('/images/rotatingimage.png')),
+                ),
+              ),
+              builder: (BuildContext context, Widget child) {
+                return Transform.rotate(
+                  angle: scrollController.offset / screenWidth * 2.0 * pi,
+                  child: child,
+                );
+              },
             ),
           ),
         ],
