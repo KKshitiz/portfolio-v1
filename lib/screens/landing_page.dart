@@ -5,8 +5,8 @@ import 'sidebar.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
 import 'first_page.dart';
 import 'second_page.dart';
-
-ScrollController scrollController;
+import 'package:flutterportfoliowebsite/widgets/rotating_image.dart';
+import 'package:flutterportfoliowebsite/widgets/scroll_progress_bar.dart';
 
 class LandingPage extends StatefulWidget {
   @override
@@ -18,6 +18,8 @@ class _LandingPageState extends State<LandingPage> {
   double screenWidth;
   double screenHeight;
   double cWidth;
+  ScrollController scrollController;
+
   @override
   void dispose() {
     scrollController.dispose();
@@ -66,36 +68,10 @@ class _LandingPageState extends State<LandingPage> {
             ],
           ),
           //progress bar indicator
-          Positioned(
-            left: 0,
-            top: 0,
-            child: Container(
-              height: 8,
-              width: cWidth,
-              color: Colors.blue,
-            ),
-          ),
+          ScrollProgressBar(cWidth: cWidth),
           //rotating indicator
-          Positioned(
-            right: 20,
-            bottom: 20,
-            child: AnimatedBuilder(
-              animation: scrollController,
-              child: Container(
-                width: 200.0,
-                height: 200.0,
-                child: const Center(
-                  child: Image(image: AssetImage('/images/rotatingimage.png')),
-                ),
-              ),
-              builder: (BuildContext context, Widget child) {
-                return Transform.rotate(
-                  angle: scrollController.offset / screenWidth * 2.0 * pi,
-                  child: child,
-                );
-              },
-            ),
-          ),
+          RotatingImage(
+              scrollController: scrollController, screenWidth: screenWidth),
         ],
       ),
     );

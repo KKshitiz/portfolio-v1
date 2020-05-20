@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
 
 class SecondPage extends StatelessWidget {
@@ -31,6 +32,7 @@ class SecondPage extends StatelessWidget {
           ),
           Text(
             kAbout,
+            textAlign: TextAlign.center,
             style: kSubHeading,
           ),
           Padding(
@@ -40,10 +42,7 @@ class SecondPage extends StatelessWidget {
               children: [
                 Expanded(
                   flex: 1,
-                  child: Image(
-                    image: NetworkImage(
-                        'https://bootstrapmade.com/demo/themes/iPortfolio/assets/img/profile-img.jpg'),
-                  ),
+                  child: Image.asset('/images/programmer.png'),
                 ),
                 Expanded(
                   flex: 2,
@@ -104,7 +103,10 @@ class SecondPage extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Text(kAboutExtra)
+                        Text(
+                          kAboutExtra,
+                          style: kNormalText,
+                        )
                       ],
                     ),
                   ),

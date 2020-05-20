@@ -42,3 +42,8 @@ TextStyle kSubHeading = TextStyle(
   color: Colors.black,
   fontSize: 20,
 );
+
+TextStyle kNormalText = TextStyle(
+  color: Colors.grey[700],
+  fontSize: 15,
+);
