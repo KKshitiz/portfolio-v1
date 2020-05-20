@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'sidebar.dart';
@@ -34,7 +33,6 @@ class _LandingPageState extends State<LandingPage> {
 
   onScroll() {
     setState(() {
-      print(scrollController.offset);
       cWidth =
           scrollController.offset * screenWidth / (noOfScreens * screenHeight);
     });

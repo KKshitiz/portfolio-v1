@@ -18,44 +18,54 @@ class FirstPage extends StatelessWidget {
       height: screenHeight,
       width: screenWidth,
       color: Colors.white,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            kAvatarName,
-            style: TextStyle(
-              fontSize: 50,
-              fontWeight: FontWeight.bold,
+      child: Stack(children: [
+        Center(child: Image.asset('/images/job.png')),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(130.0),
+              child: Text(
+                kAvatarName,
+                style: TextStyle(
+                  fontSize: 50,
+                  color: Color(0xff7d6165),
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Row(
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    'I\'m a ',
-                    style: TextStyle(
-                      fontSize: 40,
-                    ),
+                  Row(
+                    children: [
+                      Text(
+                        'I\'m a ',
+                        style: TextStyle(
+                          fontSize: 40,
+                        ),
+                      ),
+                    ],
+                  ),
+                  TypewriterAnimatedTextKit(
+                    speed: Duration(milliseconds: 200),
+                    text: kProfession,
+                    totalRepeatCount: 1,
+                    textStyle: TextStyle(
+                        decorationStyle: TextDecorationStyle.dashed,
+                        fontSize: 40,
+                        decoration: TextDecoration.underline,
+                        decorationColor: Colors.blue),
                   ),
                 ],
               ),
-              TypewriterAnimatedTextKit(
-                speed: Duration(milliseconds: 200),
-                text: kProfession,
-                totalRepeatCount: 1,
-                textStyle: TextStyle(
-                    decorationStyle: TextDecorationStyle.dashed,
-                    fontSize: 40,
-                    decoration: TextDecoration.underline,
-                    decorationColor: Colors.blue),
-              ),
-            ],
-          ),
-        ],
-      ),
+            ),
+          ],
+        ),
+      ]),
     );
   }
 }

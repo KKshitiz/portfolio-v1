@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 
 class SecondPage extends StatelessWidget {
   const SecondPage({
@@ -15,45 +14,134 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: screenHeight,
       width: screenWidth,
-      color: Colors.green,
+      color: Colors.white,
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          //about heading
           Text(
-            kAvatarName,
-            style: TextStyle(
-              fontSize: 50,
-              fontWeight: FontWeight.bold,
-            ),
+            'About',
+            textAlign: TextAlign.left,
+            style: kMainHeading,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Row(
-                children: [
-                  Text(
-                    'I\'m a ',
-                    style: TextStyle(
-                      fontSize: 40,
+          //about text
+          SizedBox(
+            height: 20,
+          ),
+          Text(
+            kAbout,
+            style: kSubHeading,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(vertical: 30.0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  flex: 1,
+                  child: Image(
+                    image: NetworkImage(
+                        'https://bootstrapmade.com/demo/themes/iPortfolio/assets/img/profile-img.jpg'),
+                  ),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 30.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          kJobTitle,
+                          style: kMainHeading,
+                        ),
+                        Text(kAboutIntro),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                DetailCard(
+                                  heading: 'Birthday',
+                                  data: '9 Sep 2000',
+                                ),
+                                DetailCard(
+                                  heading: 'Website',
+                                  data: 'www.example.com',
+                                ),
+                                DetailCard(
+                                  heading: 'Phone',
+                                  data: '+91 8948239724',
+                                ),
+                                DetailCard(
+                                  heading: 'City',
+                                  data: 'Jaipur, RJ, India',
+                                ),
+                              ],
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                DetailCard(
+                                  heading: 'Age',
+                                  data: '20',
+                                ),
+                                DetailCard(
+                                  heading: 'Degree',
+                                  data: 'B. Tech',
+                                ),
+                                DetailCard(
+                                  heading: 'Email',
+                                  data: 'skilite007@gmail.com',
+                                ),
+                                DetailCard(
+                                  heading: 'Freelance',
+                                  data: 'Available',
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        Text(kAboutExtra)
+                      ],
                     ),
                   ),
-                ],
-              ),
-              TypewriterAnimatedTextKit(
-                speed: Duration(milliseconds: 200),
-                text: kProfession,
-                totalRepeatCount: 1,
-                textStyle: TextStyle(
-                    decorationStyle: TextDecorationStyle.dashed,
-                    fontSize: 40,
-                    decoration: TextDecoration.underline,
-                    decorationColor: Colors.blue),
-              ),
-            ],
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class DetailCard extends StatelessWidget {
+  DetailCard({this.data, this.heading});
+  final String heading;
+  final String data;
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 5),
+      child: Row(
+        children: [
+          Icon(
+            Icons.arrow_forward_ios,
+            color: Colors.blue,
           ),
+          Text(
+            '$heading: ',
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          ),
+          Text(
+            data,
+            style: TextStyle(
+              color: Colors.black,
+            ),
+          )
         ],
       ),
     );
