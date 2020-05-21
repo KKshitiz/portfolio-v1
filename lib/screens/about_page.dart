@@ -5,20 +5,22 @@ import 'package:flutterportfoliowebsite/constants.dart';
 class SecondPage extends StatelessWidget {
   const SecondPage({
     Key key,
-    @required this.screenHeight,
     @required this.screenWidth,
+    @required this.screenHeight,
   }) : super(key: key);
 
-  final double screenHeight;
   final double screenWidth;
+  final double screenHeight;
 
   @override
   Widget build(BuildContext context) {
+    print(screenWidth);
     return Container(
       width: screenWidth,
-      color: Colors.white,
+      height: screenHeight,
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           //about heading
           Text(
@@ -42,7 +44,10 @@ class SecondPage extends StatelessWidget {
               children: [
                 Expanded(
                   flex: 1,
-                  child: Image.asset('/images/programmer.png'),
+                  child: Padding(
+                    padding: EdgeInsets.all(30.0),
+                    child: Image.asset('/images/programmer.png'),
+                  ),
                 ),
                 Expanded(
                   flex: 2,
@@ -55,57 +60,17 @@ class SecondPage extends StatelessWidget {
                           kJobTitle,
                           style: kMainHeading,
                         ),
-                        Text(kAboutIntro),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                DetailCard(
-                                  heading: 'Birthday',
-                                  data: '9 Sep 2000',
-                                ),
-                                DetailCard(
-                                  heading: 'Website',
-                                  data: 'www.example.com',
-                                ),
-                                DetailCard(
-                                  heading: 'Phone',
-                                  data: '+91 8948239724',
-                                ),
-                                DetailCard(
-                                  heading: 'City',
-                                  data: 'Jaipur, RJ, India',
-                                ),
-                              ],
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                DetailCard(
-                                  heading: 'Age',
-                                  data: '20',
-                                ),
-                                DetailCard(
-                                  heading: 'Degree',
-                                  data: 'B. Tech',
-                                ),
-                                DetailCard(
-                                  heading: 'Email',
-                                  data: 'skilite007@gmail.com',
-                                ),
-                                DetailCard(
-                                  heading: 'Freelance',
-                                  data: 'Available',
-                                ),
-                              ],
-                            ),
-                          ],
+                        Padding(
+                          padding: EdgeInsets.symmetric(vertical: 10.0),
+                          child: Text(kAboutIntro),
                         ),
-                        Text(
-                          kAboutExtra,
-                          style: kNormalText,
+                        DetailRow(),
+                        Padding(
+                          padding: EdgeInsets.symmetric(vertical: 10.0),
+                          child: Text(
+                            kAboutExtra,
+                            style: kNormalText,
+                          ),
                         )
                       ],
                     ),
@@ -116,6 +81,63 @@ class SecondPage extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+}
+
+class DetailRow extends StatelessWidget {
+  const DetailRow({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            DetailCard(
+              heading: 'Birthday',
+              data: '9 Sep 2000',
+            ),
+            DetailCard(
+              heading: 'Website',
+              data: 'www.example.com',
+            ),
+            DetailCard(
+              heading: 'Phone',
+              data: '+91 8948239724',
+            ),
+            DetailCard(
+              heading: 'City',
+              data: 'Jaipur, RJ, India',
+            ),
+          ],
+        ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            DetailCard(
+              heading: 'Age',
+              data: '20',
+            ),
+            DetailCard(
+              heading: 'Degree',
+              data: 'B. Tech',
+            ),
+            DetailCard(
+              heading: 'Email',
+              data: 'skilite007@gmail.com',
+            ),
+            DetailCard(
+              heading: 'Freelance',
+              data: 'Available',
+            ),
+          ],
+        ),
+      ],
     );
   }
 }

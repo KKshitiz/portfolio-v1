@@ -21,12 +21,15 @@ class _SideBarState extends State<SideBar> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Avatar(),
+          Avatar(
+            radius: 50,
+          ),
           SizedBox(
             height: 15,
           ),
           Text(
             kAvatarName,
+            textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
           ),
@@ -61,10 +64,12 @@ class _SideBarState extends State<SideBar> {
           NavigationPane(),
           Text(
             '© Copyright $kAvatarName',
+            textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white),
           ),
           Text(
             'Designed by KKshitiz',
+            textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white),
           ),
         ],
@@ -97,13 +102,13 @@ class NavigationPane extends StatelessWidget {
             isActive: false,
           ),
           NavigationTile(
-            icon: Icons.bookmark,
-            label: 'Portfolio',
+            icon: Icons.book,
+            label: 'Education',
             isActive: false,
           ),
           NavigationTile(
-            icon: Icons.settings_remote,
-            label: 'Services',
+            icon: Icons.settings,
+            label: 'Projects',
             isActive: false,
           ),
           NavigationTile(

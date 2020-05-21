@@ -16,7 +16,7 @@ Color kBorderColor = Color(0xff3f2f2c);
 //social
 //Insert you profile links
 String kFacebookUrl = 'https://www.facebook.com';
-String kGithubUrl = 'https://www.github.com';
+String kGithubUrl = 'https://www.github.com/KKshitiz';
 String kLinkedInUrl = 'https://www.linkedin.com';
 String kTwitterUrl = 'https://www.twitter.com';
 String kInstagramUrl = 'https://www.instagram.com';
@@ -32,6 +32,10 @@ String kAboutIntro =
 String kAboutExtra =
     'Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.';
 
+//contact section
+String kContactText =
+    'If you have any questions, suggestions, opportunities or just wanted to say Hello, feel free to contact me.';
+
 //styling
 TextStyle kMainHeading = TextStyle(
   color: Colors.blue[700],
@@ -39,7 +43,7 @@ TextStyle kMainHeading = TextStyle(
   fontWeight: FontWeight.bold,
 );
 TextStyle kSubHeading = TextStyle(
-  color: Colors.black,
+  color: Colors.grey[700],
   fontSize: 20,
 );
 

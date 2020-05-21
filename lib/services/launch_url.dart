@@ -25,3 +25,14 @@ Future<void> launchUrlWebview(String url) async {
     print('invalid url $url');
   }
 }
+
+void createEmail() async {
+  const emailaddress =
+      'mailto:skilite007@gmail.com?subject=Sample Subject&body=This is a Sample email';
+
+  if (await canLaunch(emailaddress)) {
+    await launch(emailaddress);
+  } else {
+    throw 'Could not Email';
+  }
+}

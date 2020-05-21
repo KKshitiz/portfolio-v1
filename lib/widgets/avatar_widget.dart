@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
 
 class Avatar extends StatelessWidget {
+  Avatar({@required this.radius});
+  final radius;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -10,7 +12,7 @@ class Avatar extends StatelessWidget {
           border: Border.all(width: kBorderWidth, color: kBorderColor)),
       child: CircleAvatar(
         backgroundColor: Colors.black,
-        radius: kAvatarRadius,
+        radius: radius,
         child: kAvatarImage,
       ),
     );

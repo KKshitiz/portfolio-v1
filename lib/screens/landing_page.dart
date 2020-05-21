@@ -1,12 +1,9 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'sidebar.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
-import 'first_page.dart';
-import 'second_page.dart';
-import 'package:flutterportfoliowebsite/widgets/rotating_image.dart';
-import 'package:flutterportfoliowebsite/widgets/scroll_progress_bar.dart';
+import 'package:flutterportfoliowebsite/widgets/desktop_view.dart';
+import 'not_supported.dart';
 
 class LandingPage extends StatefulWidget {
   @override
@@ -45,34 +42,14 @@ class _LandingPageState extends State<LandingPage> {
     screenWidth = MediaQuery.of(context).size.width;
     screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
-      body: Stack(
-        children: [
-          Row(
-            children: [
-              Expanded(
-                flex: 1,
-                child: SideBar(),
-              ),
-              Expanded(
-                flex: 4,
-                child: ListView(
-                  controller: scrollController,
-                  children: [
-                    FirstPage(
-                        screenHeight: screenHeight, screenWidth: screenWidth),
-                    SecondPage(
-                        screenHeight: screenHeight, screenWidth: screenWidth),
-                  ],
-                ),
-              ),
-            ],
-          ),
-          //progress bar indicator
-          ScrollProgressBar(cWidth: cWidth),
-          //rotating indicator
-          RotatingImage(
-              scrollController: scrollController, screenWidth: screenWidth),
-        ],
+      body: ScreenTypeLayout(
+        desktop: DesktopView(
+            scrollController: scrollController,
+            screenHeight: screenHeight,
+            screenWidth: screenWidth,
+            cWidth: cWidth),
+        tablet: NotSupported(),
+        mobile: NotSupported(),
       ),
     );
   }
