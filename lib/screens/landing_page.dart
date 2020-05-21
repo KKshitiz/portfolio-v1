@@ -49,7 +49,6 @@ class _LandingPageState extends State<LandingPage> {
         currentScreen = 6;
       else
         currentScreen = 7;
-      print('screen:$currentScreen');
     });
   }
 
