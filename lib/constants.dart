@@ -23,18 +23,18 @@ String kInstagramUrl = 'https://www.instagram.com';
 
 //about
 List<String> kProfession = ['developer', 'designer', 'programmer', 'polymath'];
-int kNoOfScreens = 5;
+int kNoOfScreens = 7;
 String kJobTitle = 'Programmer and Developer';
 String kAbout =
     'I am an engineering student currently pursuing my B.Tech from NIT, Jaipur. I am a determined and motivated individual with a desire to constantly learn and try out new things.';
 String kAboutIntro =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+    'I spend most of my time programming and developing software.';
 String kAboutExtra =
     'Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.';
 String kContactText =
     'If you have any questions, suggestions, opportunities or just wanted to say Hello, feel free to contact me.';
 String kResumeText = 'Download my resume in pdf format from here.';
-String kHobbiesText = 'How I use my spare time.';
+String kHobbiesText = 'And that\'s how I utilize my spare time.';
 
 //styling
 TextStyle kMainHeading = TextStyle(

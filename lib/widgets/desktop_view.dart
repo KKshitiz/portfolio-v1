@@ -11,12 +11,14 @@ class DesktopView extends StatelessWidget {
     @required this.screenHeight,
     @required this.screenWidth,
     @required this.cWidth,
+    @required this.currentScreen,
   }) : super(key: key);
 
   final ScrollController scrollController;
   final double screenHeight;
   final double screenWidth;
   final double cWidth;
+  final int currentScreen;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class DesktopView extends StatelessWidget {
           children: [
             Expanded(
               flex: 1,
-              child: SideBar(),
+              child: SideBar(currentScreen),
             ),
             Expanded(
               flex: 4,

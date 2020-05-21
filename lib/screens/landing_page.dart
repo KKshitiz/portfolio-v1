@@ -12,6 +12,7 @@ class LandingPage extends StatefulWidget {
 
 class _LandingPageState extends State<LandingPage> {
   int noOfScreens = kNoOfScreens - 1;
+  int currentScreen;
   double screenWidth;
   double screenHeight;
   double cWidth;
@@ -34,6 +35,21 @@ class _LandingPageState extends State<LandingPage> {
     setState(() {
       cWidth =
           scrollController.offset * screenWidth / (noOfScreens * screenHeight);
+      if (scrollController.offset < screenHeight)
+        currentScreen = 1;
+      else if (scrollController.offset < 2 * screenHeight)
+        currentScreen = 2;
+      else if (scrollController.offset < 3 * screenHeight)
+        currentScreen = 3;
+      else if (scrollController.offset < 4 * screenHeight)
+        currentScreen = 4;
+      else if (scrollController.offset < 5 * screenHeight)
+        currentScreen = 5;
+      else if (scrollController.offset < 6 * screenHeight)
+        currentScreen = 6;
+      else
+        currentScreen = 7;
+      print('screen:$currentScreen');
     });
   }
 
@@ -44,10 +60,12 @@ class _LandingPageState extends State<LandingPage> {
     return Scaffold(
       body: ScreenTypeLayout(
         desktop: DesktopView(
-            scrollController: scrollController,
-            screenHeight: screenHeight,
-            screenWidth: screenWidth,
-            cWidth: cWidth),
+          scrollController: scrollController,
+          screenHeight: screenHeight,
+          screenWidth: screenWidth,
+          cWidth: cWidth,
+          currentScreen: currentScreen,
+        ),
         tablet: NotSupported(),
         mobile: NotSupported(),
       ),

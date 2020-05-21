@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
+import 'package:flutterportfoliowebsite/services/launch_url.dart';
 import 'package:flutterportfoliowebsite/widgets/blue_button.dart';
 
 class ResumePage extends StatelessWidget {
@@ -44,7 +45,10 @@ class ResumePage extends StatelessWidget {
                       height: 40,
                     ),
                     BlueButton(
-                      onTap: () {},
+                      onTap: () {
+                        launchUrlBrowser(
+                            'https://github.com/KKshitiz/flutter-website/raw/master/assets/Resume.pdf');
+                      },
                       text: 'Download',
                     )
                   ],

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({
@@ -17,7 +16,6 @@ class FirstPage extends StatelessWidget {
     return Container(
       height: screenHeight,
       width: screenWidth,
-      color: Colors.white,
       padding: EdgeInsets.all(70),
       child: Column(children: [
         Center(

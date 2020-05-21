@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'scroll_progress_bar.dart';
-import 'page_list_view.dart';
-import 'mobile_navbar.dart';
 
 class MobileView extends StatelessWidget {
   const MobileView({

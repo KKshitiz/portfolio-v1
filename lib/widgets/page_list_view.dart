@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterportfoliowebsite/screens/contact_page.dart';
+import 'package:flutterportfoliowebsite/screens/hobbies_page.dart';
 import 'package:flutterportfoliowebsite/screens/intro_page.dart';
 import 'package:flutterportfoliowebsite/screens/about_page.dart';
 import 'package:flutterportfoliowebsite/screens/education_page.dart';
@@ -29,11 +30,15 @@ class PageListView extends StatelessWidget {
         screenWidth: screenWidth,
         screenHeight: screenHeight,
       ),
+      ProjectsPage(
+        screenWidth: screenWidth,
+        screenHeight: screenHeight,
+      ),
       EducationPage(
         screenWidth: screenWidth,
         screenHeight: screenHeight,
       ),
-      ProjectsPage(
+      HobbiesPage(
         screenWidth: screenWidth,
         screenHeight: screenHeight,
       ),

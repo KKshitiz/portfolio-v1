@@ -18,6 +18,7 @@ class SecondPage extends StatelessWidget {
     return Container(
       width: screenWidth,
       height: screenHeight,
+      color: Colors.white,
       padding: EdgeInsets.symmetric(horizontal: 40, vertical: 40),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -43,14 +44,14 @@ class SecondPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Expanded(
-                  flex: 1,
+                  flex: 2,
                   child: Padding(
                     padding: EdgeInsets.all(30.0),
                     child: Image.asset('/images/mobiledev.png'),
                   ),
                 ),
                 Expanded(
-                  flex: 2,
+                  flex: 3,
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 30.0),
                     child: Column(

@@ -3,16 +3,11 @@ import 'package:flutterportfoliowebsite/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutterportfoliowebsite/services/launch_url.dart';
-
-//import custom widgets
 import 'package:flutterportfoliowebsite/widgets/avatar_widget.dart';
 
-class SideBar extends StatefulWidget {
-  @override
-  _SideBarState createState() => _SideBarState();
-}
-
-class _SideBarState extends State<SideBar> {
+class SideBar extends StatelessWidget {
+  SideBar(this.currentScreen);
+  final int currentScreen;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -61,7 +56,7 @@ class _SideBarState extends State<SideBar> {
               )
             ],
           ),
-          NavigationPane(),
+          NavigationPane(currentScreen),
           Text(
             '© Copyright $kAvatarName',
             textAlign: TextAlign.center,
@@ -79,6 +74,8 @@ class _SideBarState extends State<SideBar> {
 }
 
 class NavigationPane extends StatelessWidget {
+  NavigationPane(this.currentScreen);
+  final int currentScreen;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -89,17 +86,17 @@ class NavigationPane extends StatelessWidget {
           NavigationTile(
             icon: Icons.home,
             label: 'Home',
-            isActive: true,
+            isActive: 1 == currentScreen,
           ),
           NavigationTile(
             icon: Icons.person_outline,
             label: 'About',
-            isActive: false,
+            isActive: 2 == currentScreen,
           ),
           NavigationTile(
-            icon: Icons.library_books,
-            label: 'Resume',
-            isActive: false,
+            icon: Icons.settings,
+            label: 'Projects',
+            isActive: 3 == currentScreen,
             onPress: () {
               launchUrlBrowser('github.com');
             },
@@ -107,17 +104,22 @@ class NavigationPane extends StatelessWidget {
           NavigationTile(
             icon: Icons.book,
             label: 'Education',
-            isActive: false,
+            isActive: 4 == currentScreen,
           ),
           NavigationTile(
-            icon: Icons.settings,
-            label: 'Projects',
-            isActive: false,
+            icon: Icons.videogame_asset,
+            label: 'Hobbies',
+            isActive: 5 == currentScreen,
+          ),
+          NavigationTile(
+            icon: Icons.library_books,
+            label: 'Resume',
+            isActive: 6 == currentScreen,
           ),
           NavigationTile(
             icon: Icons.email,
             label: 'Contact',
-            isActive: false,
+            isActive: 7 == currentScreen,
           ),
         ],
       ),
