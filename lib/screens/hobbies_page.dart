@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class EducationPage extends StatelessWidget {
-  const EducationPage({
+class HobbiesPage extends StatelessWidget {
+  const HobbiesPage({
     Key key,
     @required this.screenWidth,
     @required this.screenHeight,
@@ -11,8 +11,6 @@ class EducationPage extends StatelessWidget {
   final double screenHeight;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-    );
+    return Container();
   }
 }

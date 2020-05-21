@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutterportfoliowebsite/screens/contact_page.dart';
-import 'package:flutterportfoliowebsite/screens/first_page.dart';
+import 'package:flutterportfoliowebsite/screens/intro_page.dart';
 import 'package:flutterportfoliowebsite/screens/about_page.dart';
+import 'package:flutterportfoliowebsite/screens/education_page.dart';
+import 'package:flutterportfoliowebsite/screens/projects_page.dart';
+import 'package:flutterportfoliowebsite/screens/resume_page.dart';
 
 class PageListView extends StatelessWidget {
   const PageListView({
@@ -22,16 +25,31 @@ class PageListView extends StatelessWidget {
         screenWidth: screenWidth,
         screenHeight: screenHeight,
       ),
-      SecondPage(screenWidth: screenWidth, screenHeight: screenHeight),
-      ContactPage(screenWidth: screenWidth, screenHeight: screenHeight),
+      SecondPage(
+        screenWidth: screenWidth,
+        screenHeight: screenHeight,
+      ),
+      EducationPage(
+        screenWidth: screenWidth,
+        screenHeight: screenHeight,
+      ),
+      ProjectsPage(
+        screenWidth: screenWidth,
+        screenHeight: screenHeight,
+      ),
+      ResumePage(
+        screenWidth: screenWidth,
+        screenHeight: screenHeight,
+      ),
+      ContactPage(
+        screenWidth: screenWidth,
+        screenHeight: screenHeight,
+      ),
     ];
 
-    return ListView.builder(
+    return ListView(
       controller: scrollController,
-      itemBuilder: (context, index) {
-        return pages[index];
-      },
-      itemCount: pages.length,
+      children: pages,
     );
   }
 }

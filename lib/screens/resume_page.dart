@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
-import 'package:flutterportfoliowebsite/services/launch_url.dart';
 import 'package:flutterportfoliowebsite/widgets/blue_button.dart';
 
-class ContactPage extends StatelessWidget {
-  const ContactPage({
+class ResumePage extends StatelessWidget {
+  const ResumePage({
     Key key,
     @required this.screenWidth,
     @required this.screenHeight,
@@ -17,11 +16,12 @@ class ContactPage extends StatelessWidget {
     return Container(
       height: screenHeight,
       width: screenWidth,
-      padding: EdgeInsets.symmetric(horizontal: 50, vertical: 60),
+      color: Colors.white,
+      padding: EdgeInsets.symmetric(horizontal: 50, vertical: 30),
       child: Column(
         children: [
           Text(
-            'Contact Me',
+            'Resume',
             style: kMainHeading,
           ),
           SizedBox(
@@ -32,17 +32,11 @@ class ContactPage extends StatelessWidget {
             children: [
               Expanded(
                 flex: 2,
-                child: Image.asset(
-                  'images/contact.png',
-                ),
-              ),
-              Expanded(
-                flex: 1,
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Text(
-                      kContactText,
+                      kResumeText,
                       textAlign: TextAlign.center,
                       style: kSubHeading,
                     ),
@@ -50,12 +44,20 @@ class ContactPage extends StatelessWidget {
                       height: 40,
                     ),
                     BlueButton(
-                      onTap: () {
-                        createEmail();
-                      },
-                      text: 'Contact Me',
+                      onTap: () {},
+                      text: 'Download',
                     )
                   ],
+                ),
+              ),
+              Expanded(
+                flex: 3,
+                child: Container(
+//                  padding: EdgeInsets.all(30),
+                  child: Image.asset(
+                    'images/resume.png',
+                    fit: BoxFit.contain,
+                  ),
                 ),
               ),
             ],

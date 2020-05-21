@@ -18,9 +18,9 @@ class SecondPage extends StatelessWidget {
     return Container(
       width: screenWidth,
       height: screenHeight,
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+      padding: EdgeInsets.symmetric(horizontal: 40, vertical: 40),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           //about heading
           Text(
@@ -38,15 +38,15 @@ class SecondPage extends StatelessWidget {
             style: kSubHeading,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 30.0),
+            padding: EdgeInsets.symmetric(vertical: 50.0),
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Expanded(
                   flex: 1,
                   child: Padding(
                     padding: EdgeInsets.all(30.0),
-                    child: Image.asset('/images/programmer.png'),
+                    child: Image.asset('/images/mobiledev.png'),
                   ),
                 ),
                 Expanded(
@@ -60,11 +60,17 @@ class SecondPage extends StatelessWidget {
                           kJobTitle,
                           style: kMainHeading,
                         ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(vertical: 10.0),
-                          child: Text(kAboutIntro),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(kAboutIntro),
+                        SizedBox(
+                          height: 30,
                         ),
                         DetailRow(),
+                        SizedBox(
+                          height: 30,
+                        ),
                         Padding(
                           padding: EdgeInsets.symmetric(vertical: 10.0),
                           child: Text(

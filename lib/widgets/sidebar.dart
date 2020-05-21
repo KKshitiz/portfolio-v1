@@ -100,6 +100,9 @@ class NavigationPane extends StatelessWidget {
             icon: Icons.library_books,
             label: 'Resume',
             isActive: false,
+            onPress: () {
+              launchUrlBrowser('github.com');
+            },
           ),
           NavigationTile(
             icon: Icons.book,
@@ -123,32 +126,36 @@ class NavigationPane extends StatelessWidget {
 }
 
 class NavigationTile extends StatelessWidget {
-  NavigationTile({this.icon, this.label, this.isActive});
+  NavigationTile({this.icon, this.label, this.isActive, this.onPress});
   final IconData icon;
   final String label;
   final bool isActive;
+  final Function onPress;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 15),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Icon(
-            icon,
-            color: isActive ? Colors.blue : Colors.grey,
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 10.0),
-            child: Text(
-              label,
-              style: TextStyle(
-                  color: isActive ? Colors.white : Colors.grey,
-                  fontSize: 15,
-                  letterSpacing: 1.0),
+    return GestureDetector(
+      onTap: onPress,
+      child: Container(
+        padding: EdgeInsets.all(15),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Icon(
+              icon,
+              color: isActive ? Colors.blue : Colors.grey,
             ),
-          ),
-        ],
+            Padding(
+              padding: EdgeInsets.only(left: 10.0),
+              child: Text(
+                label,
+                style: TextStyle(
+                    color: isActive ? Colors.white : Colors.grey,
+                    fontSize: 15,
+                    letterSpacing: 1.0),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

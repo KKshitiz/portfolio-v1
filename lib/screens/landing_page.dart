@@ -19,7 +19,7 @@ class _LandingPageState extends State<LandingPage> {
 
   @override
   void dispose() {
-    scrollController.dispose();
+//    scrollController.dispose();
     super.dispose();
   }
 
