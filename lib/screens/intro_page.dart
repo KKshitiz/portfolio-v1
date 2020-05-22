@@ -19,8 +19,7 @@ class FirstPage extends StatelessWidget {
       padding: EdgeInsets.all(70),
       child: Column(children: [
         Center(
-          child: Image.network(
-              'https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/job.png'),
+          child: Image.network('$assetUrl/job.png'),
         ),
         Center(
           child: Padding(

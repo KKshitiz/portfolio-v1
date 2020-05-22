@@ -47,8 +47,7 @@ class SecondPage extends StatelessWidget {
                   flex: 2,
                   child: Padding(
                     padding: EdgeInsets.all(30.0),
-                    child: Image.network(
-                        'https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/mobiledev.png'),
+                    child: Image.network('$assetUrl/mobiledev.png'),
                   ),
                 ),
                 Expanded(

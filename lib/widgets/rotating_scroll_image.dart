@@ -22,8 +22,7 @@ class RotatingImage extends StatelessWidget {
           width: 200.0,
           height: 200.0,
           child: Center(
-            child: Image.network(
-                'https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/rotatingimage.png'),
+            child: Image.network('/rotatingimage.png'),
           ),
         ),
         builder: (BuildContext context, Widget child) {

@@ -47,7 +47,7 @@ class ResumePage extends StatelessWidget {
                     BlueButton(
                       onTap: () {
                         launchUrlBrowser(
-                            'https://github.com/KKshitiz/flutter-website/raw/master/assets/Resume.pdf');
+                            'https://github.com/KKshitiz/flutter-website/raw/gh-pages/assets/assets/Resume.pdf');
                       },
                       text: 'Download',
                     )
@@ -58,8 +58,7 @@ class ResumePage extends StatelessWidget {
                 flex: 3,
                 child: Container(
 //                  padding: EdgeInsets.all(30),
-                  child: Image.network(
-                      'https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/resume.png'),
+                  child: Image.network('$assetUrl/resume.png'),
                 ),
               ),
             ],
