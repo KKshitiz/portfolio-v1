@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "c8dcea7719852a43f496443eafe9decf",
+  "assets/AssetManifest.json": "14b0cacd9dbe9095660e289eda4526b7",
 "assets/assets/fonts/Poppins-Bold.ttf": "c23534acbeddbaadfd0ab2d2bbfdfc84",
 "assets/assets/fonts/Poppins-ExtraBold.ttf": "6b78c7ec468eb0e13c6c5c4c39203986",
 "assets/assets/fonts/Poppins-Regular.ttf": "41e8dead03fb979ecc23b8dfb0fef627",
@@ -18,6 +18,7 @@ const RESOURCES = {
 "assets/assets/images/mobiledev.png": "d51a2c09ee94058770d444079e63895b",
 "assets/assets/images/programmer.png": "5e14ee8f989551155eb8a6b713fcf377",
 "assets/assets/images/resume.png": "8694c9b03ea0d68081b1d534531b7113",
+"assets/assets/images/rotating-image.png": "8d5d504a49592c2c4c87880442ad021d",
 "assets/assets/images/rotatingimage.png": "165b26bef70a931ba338442a9e9d4ca0",
 "assets/assets/images/school.png": "c067136a5d1a2c989899ac81072ef89c",
 "assets/assets/Resume.pdf": "97a7f4b82d7c3b6dc7d5adeffc58f485",
@@ -34,7 +35,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "36ba7a4a49cb13891353349d215ff548",
 "/": "36ba7a4a49cb13891353349d215ff548",
-"main.dart.js": "526feebcd838f5832d867f676dbb1d57",
+"main.dart.js": "75f713c161753b4355d3ec6a4b2d83d8",
 "manifest.json": "d55a9c437486d557c4dc004d264eb95d"
 };
 
