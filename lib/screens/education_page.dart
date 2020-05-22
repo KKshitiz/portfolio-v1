@@ -59,10 +59,8 @@ class EducationPage extends StatelessWidget {
               Expanded(
                 flex: 3,
                 child: Container(
-                  child: Image.asset(
-                    'images/graduation.png',
-                    fit: BoxFit.contain,
-                  ),
+                  child: Image.network(
+                      'https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/graduation.png'),
                 ),
               ),
             ],

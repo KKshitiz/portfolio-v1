@@ -8,7 +8,7 @@ class NotSupported extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(30),
         child: Text(
-          'Mobile version coming soon!',
+          'Please switch to desktop to view. \nMobile version coming soon!',
           textAlign: TextAlign.center,
           style: kMainHeading,
         ),

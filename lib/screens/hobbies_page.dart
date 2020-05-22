@@ -40,10 +40,8 @@ class HobbiesPage extends StatelessWidget {
                 flex: 3,
                 child: Container(
 //                  padding: EdgeInsets.all(30),
-                  child: Image.asset(
-                    'images/hobbies.png',
-                    fit: BoxFit.contain,
-                  ),
+                  child: Image.network(
+                      'https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/hobbies.png'),
                 ),
               ),
               Expanded(

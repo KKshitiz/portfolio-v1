@@ -58,10 +58,8 @@ class ResumePage extends StatelessWidget {
                 flex: 3,
                 child: Container(
 //                  padding: EdgeInsets.all(30),
-                  child: Image.asset(
-                    'images/resume.png',
-                    fit: BoxFit.contain,
-                  ),
+                  child: Image.network(
+                      'https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/resume.png'),
                 ),
               ),
             ],

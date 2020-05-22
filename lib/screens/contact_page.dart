@@ -32,9 +32,8 @@ class ContactPage extends StatelessWidget {
             children: [
               Expanded(
                 flex: 2,
-                child: Image.asset(
-                  'images/contact.png',
-                ),
+                child: Image.network(
+                    'https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/contact.png'),
               ),
               Expanded(
                 flex: 1,

@@ -5,7 +5,8 @@ var kAvatarImage = Container(
   decoration: BoxDecoration(shape: BoxShape.circle),
   child: Image(
     fit: BoxFit.contain,
-    image: AssetImage('images/circle-avatar.png'),
+    image: NetworkImage(
+        'https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/circle-avatar.png'),
   ),
 );
 String kAvatarName = "Kshitiz Kamal";
