@@ -3,12 +3,12 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "648ca1cc2c0b0f4dee433b7d7ec52ee0",
+  "assets/AssetManifest.json": "c8dcea7719852a43f496443eafe9decf",
 "assets/assets/fonts/Poppins-Bold.ttf": "c23534acbeddbaadfd0ab2d2bbfdfc84",
 "assets/assets/fonts/Poppins-ExtraBold.ttf": "6b78c7ec468eb0e13c6c5c4c39203986",
 "assets/assets/fonts/Poppins-Regular.ttf": "41e8dead03fb979ecc23b8dfb0fef627",
 "assets/assets/images/bg.png": "6b17637c5ec2f6906eb28c76a1eb33e4",
-"assets/assets/images/circle-avatar.png": "c3b7dccad25da29f180d9c3c724a2eb6",
+"assets/assets/images/circle-avatar.png": "022a354ab46fcf626c1413e9686efa9d",
 "assets/assets/images/contact.png": "de1948745aaa4b7610d36786cdba883e",
 "assets/assets/images/dev.png": "f0e083b2a89025bec1df06644c016531",
 "assets/assets/images/gamer-colour.png": "c408261af315422c7a86e84280befd0b",
@@ -20,6 +20,7 @@ const RESOURCES = {
 "assets/assets/images/resume.png": "8694c9b03ea0d68081b1d534531b7113",
 "assets/assets/images/rotatingimage.png": "165b26bef70a931ba338442a9e9d4ca0",
 "assets/assets/images/school.png": "c067136a5d1a2c989899ac81072ef89c",
+"assets/assets/Resume.pdf": "97a7f4b82d7c3b6dc7d5adeffc58f485",
 "assets/FontManifest.json": "08710c40c68824bce0f865bc33903198",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "assets/LICENSE": "8f6da76428dbee6ab99af9dbe0080818",
@@ -33,7 +34,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "36ba7a4a49cb13891353349d215ff548",
 "/": "36ba7a4a49cb13891353349d215ff548",
-"main.dart.js": "5f3c9ef256102ff33c8d63052a25ce6f",
+"main.dart.js": "b0998391e89c02f5f3cc8247646f6ecb",
 "manifest.json": "d55a9c437486d557c4dc004d264eb95d"
 };
 
