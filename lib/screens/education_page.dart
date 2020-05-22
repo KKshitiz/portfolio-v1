@@ -18,20 +18,15 @@ class EducationPage extends StatelessWidget {
       color: Colors.white,
       padding: EdgeInsets.symmetric(horizontal: 50, vertical: 60),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text(
             'Education',
             style: kMainHeading,
           ),
-          SizedBox(
-            height: 30,
-          ),
           Text(
             'My academic life',
             style: kSubHeading,
-          ),
-          SizedBox(
-            height: 20,
           ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -39,6 +34,8 @@ class EducationPage extends StatelessWidget {
               Expanded(
                 flex: 2,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisSize: MainAxisSize.max,
                   children: [
                     EducationTile(
                       mainText: 'B.Tech, NIT Jaipur',
@@ -83,6 +80,7 @@ class EducationTile extends StatelessWidget {
         children: [
           Text(
             mainText,
+            textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.black,
               fontSize: 25,

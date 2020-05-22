@@ -64,7 +64,10 @@ class SecondPage extends StatelessWidget {
                         SizedBox(
                           height: 10,
                         ),
-                        Text(kAboutIntro),
+                        Text(
+                          kAboutIntro,
+                          style: kNormalText,
+                        ),
                         SizedBox(
                           height: 30,
                         ),

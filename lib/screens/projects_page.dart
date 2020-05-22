@@ -20,20 +20,16 @@ class ProjectsPage extends StatelessWidget {
       height: screenHeight,
       width: screenWidth,
       child: Column(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Text(
             'Projects',
             style: kMainHeading,
           ),
-          SizedBox(
-            height: 20,
-          ),
           Text(
-            'Show me your projects and I\'ll tell you what type of programmer you are',
+            'Things I\'ve previously worked upon.',
             style: kSubHeading,
-          ),
-          SizedBox(
-            height: 30,
           ),
           BlueButton(
             text: 'GitHub',
@@ -68,7 +64,8 @@ class ProjectsPage extends StatelessWidget {
                 Row(children: [
                   ProjectCard(
                     projectTitle: 'Actroid',
-                    projectDescription: 'Smart Animatronic face ',
+                    projectDescription:
+                        'Smart Animatronic face packed with Computer Vision and NLP capabilities.',
                     url: 'https://github.com/KKshitiz/Actroid2.0',
                   ),
                   ProjectCard(
@@ -78,10 +75,10 @@ class ProjectsPage extends StatelessWidget {
                     url: 'https://kkshitiz.github.io/J.A.R.V.I.S/',
                   ),
                   ProjectCard(
-                    projectTitle: 'hello',
+                    projectTitle: 'Flash-Chat',
                     projectDescription:
-                        'fslfjaljflksdf sdfjslkfjalfd kfdsjfksljf',
-                    url: null,
+                        'A group chat app made in flutter. It is powered by firebase as backend and uses the firestore cloud API',
+                    url: 'https://github.com/KKshitiz/Flash-Chat-Flutter',
                   ),
                 ]),
               ],

@@ -18,35 +18,26 @@ class HobbiesPage extends StatelessWidget {
       width: screenWidth,
       padding: EdgeInsets.symmetric(horizontal: 50, vertical: 30),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text(
             'Hobbies',
             style: kMainHeading,
           ),
-          SizedBox(
-            height: 30,
-          ),
           Text(
             kHobbiesText,
             style: kSubHeading,
-          ),
-          SizedBox(
-            height: 50,
           ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Expanded(
                 flex: 3,
-                child: Container(
-//                  padding: EdgeInsets.all(30),
-                  child: Image.network('$assetUrl/hobbies.png'),
-                ),
+                child: Image.network('$assetUrl/hobbies.png'),
               ),
               Expanded(
                 flex: 2,
                 child: Column(
-                  mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     HobbieContainer(
@@ -83,8 +74,11 @@ class HobbieContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 80, vertical: 20),
+      margin: EdgeInsets.symmetric(vertical: 20),
+//      alignment: Alignment.centerRight,
+//      color: Colors.red,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(
             icon,

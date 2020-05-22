@@ -14,25 +14,23 @@ class SideBar extends StatelessWidget {
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(color: Colors.black),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Avatar(
             radius: 50,
-          ),
-          SizedBox(
-            height: 15,
           ),
           Text(
             kAvatarName,
             textAlign: TextAlign.center,
             style: TextStyle(
-                fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
-          ),
-          SizedBox(
-            height: 15,
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisSize: MainAxisSize.max,
             children: [
               SocialIcon(
                 icon: FontAwesomeIcons.facebookF,
@@ -57,15 +55,20 @@ class SideBar extends StatelessWidget {
             ],
           ),
           NavigationPane(currentScreen),
-          Text(
-            '© Copyright $kAvatarName',
-            textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white),
-          ),
-          Text(
-            'Designed by KKshitiz',
-            textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white),
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                '© Copyright $kAvatarName',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.white),
+              ),
+              Text(
+                'Designed by KKshitiz',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.white),
+              ),
+            ],
           ),
         ],
       ),
@@ -79,7 +82,6 @@ class NavigationPane extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 25),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -176,7 +178,6 @@ class SocialIcon extends StatelessWidget {
           launchUrlBrowser(url);
         },
         shape: CircleBorder(),
-        padding: EdgeInsets.all(0),
         fillColor: Color(0xff312421),
         hoverColor: Colors.blue,
         child: Icon(

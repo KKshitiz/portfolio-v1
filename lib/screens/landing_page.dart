@@ -12,7 +12,7 @@ class LandingPage extends StatefulWidget {
 
 class _LandingPageState extends State<LandingPage> {
   int noOfScreens = kNoOfScreens - 1;
-  int currentScreen;
+  int currentScreen = 1;
   double screenWidth;
   double screenHeight;
   double cWidth;
@@ -65,7 +65,13 @@ class _LandingPageState extends State<LandingPage> {
           cWidth: cWidth,
           currentScreen: currentScreen,
         ),
-        tablet: NotSupported(),
+        tablet: DesktopView(
+          scrollController: scrollController,
+          screenHeight: screenHeight,
+          screenWidth: screenWidth,
+          cWidth: cWidth,
+          currentScreen: currentScreen,
+        ),
         mobile: NotSupported(),
       ),
     );

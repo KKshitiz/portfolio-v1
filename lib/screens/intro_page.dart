@@ -16,14 +16,18 @@ class FirstPage extends StatelessWidget {
     return Container(
       height: screenHeight,
       width: screenWidth,
-      padding: EdgeInsets.all(70),
-      child: Column(children: [
-        Center(
-          child: Image.network('$assetUrl/job.png'),
-        ),
-        Center(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 20.0),
+      alignment: Alignment.center,
+//      padding: EdgeInsets.all(70),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Expanded(
+            flex: 4,
+            child: Image.network('$assetUrl/job.png'),
+          ),
+          Expanded(
+            flex: 1,
             child: Text(
               'Hi, I\'m $kAvatarName',
               style: TextStyle(
@@ -33,8 +37,8 @@ class FirstPage extends StatelessWidget {
               ),
             ),
           ),
-        ),
-      ]),
+        ],
+      ),
     );
   }
 }

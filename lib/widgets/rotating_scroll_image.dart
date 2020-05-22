@@ -22,7 +22,7 @@ class RotatingImage extends StatelessWidget {
           width: 200.0,
           height: 200.0,
           child: Center(
-            child: Image.network('/rotatingimage.png'),
+            child: Image.asset('images/rotating-image.png'),
           ),
         ),
         builder: (BuildContext context, Widget child) {
