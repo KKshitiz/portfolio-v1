@@ -25,7 +25,7 @@ class EducationPage extends StatelessWidget {
             style: kMainHeading,
           ),
           Text(
-            'My academic life',
+            'My academic life, in a nutshell.',
             style: kSubHeading,
           ),
           Row(
@@ -56,7 +56,7 @@ class EducationPage extends StatelessWidget {
               Expanded(
                 flex: 3,
                 child: Container(
-                  child: Image.network('$assetUrl/graduation.png'),
+                  child: Image.network('$kAssetUrl/graduation.png'),
                 ),
               ),
             ],

@@ -47,7 +47,7 @@ class SecondPage extends StatelessWidget {
                   flex: 2,
                   child: Padding(
                     padding: EdgeInsets.all(30.0),
-                    child: Image.network('$assetUrl/mobiledev.png'),
+                    child: Image.network('$kAssetUrl/mobiledev.png'),
                   ),
                 ),
                 Expanded(
@@ -113,8 +113,8 @@ class DetailRow extends StatelessWidget {
               data: '9 Sep 2000',
             ),
             DetailCard(
-              heading: 'Website',
-              data: 'www.example.com',
+              heading: 'College',
+              data: 'NIT, Jaipur',
             ),
             DetailCard(
               heading: 'Phone',

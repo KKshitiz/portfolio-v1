@@ -58,7 +58,7 @@ class ResumePage extends StatelessWidget {
                 flex: 3,
                 child: Container(
 //                  padding: EdgeInsets.all(30),
-                  child: Image.network('$assetUrl/resume.png'),
+                  child: Image.network('$kAssetUrl/resume.png'),
                 ),
               ),
             ],

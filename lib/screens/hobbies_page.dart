@@ -33,7 +33,7 @@ class HobbiesPage extends StatelessWidget {
             children: [
               Expanded(
                 flex: 3,
-                child: Image.network('$assetUrl/hobbies.png'),
+                child: Image.network('$kAssetUrl/hobbies.png'),
               ),
               Expanded(
                 flex: 2,

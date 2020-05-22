@@ -24,7 +24,7 @@ class FirstPage extends StatelessWidget {
         children: [
           Expanded(
             flex: 4,
-            child: Image.network('$assetUrl/job.png'),
+            child: Image.network('$kAssetUrl/job.png'),
           ),
           Expanded(
             flex: 1,

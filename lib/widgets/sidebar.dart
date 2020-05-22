@@ -33,16 +33,16 @@ class SideBar extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             children: [
               SocialIcon(
-                icon: FontAwesomeIcons.facebookF,
-                url: kFacebookUrl,
+                icon: FontAwesomeIcons.instagram,
+                url: kInstagramUrl,
               ),
               SocialIcon(
                 icon: FontAwesomeIcons.github,
                 url: kGithubUrl,
               ),
               SocialIcon(
-                icon: FontAwesomeIcons.instagram,
-                url: kInstagramUrl,
+                icon: FontAwesomeIcons.terminal,
+                url: kStopstalkUrl,
               ),
               SocialIcon(
                 icon: FontAwesomeIcons.twitter,

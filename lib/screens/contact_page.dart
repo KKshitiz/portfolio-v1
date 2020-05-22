@@ -32,7 +32,7 @@ class ContactPage extends StatelessWidget {
             children: [
               Expanded(
                 flex: 2,
-                child: Image.network('$assetUrl/contact.png'),
+                child: Image.network('$kAssetUrl/contact.png'),
               ),
               Expanded(
                 flex: 1,
