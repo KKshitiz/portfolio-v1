@@ -40404,7 +40404,7 @@ F:function(a){var t,s,r=null,q=this.c
 P.ht(q)
 t=$.kr()
 s=u.t
-return M.bp(r,T.cd(H.b([L.bc("About",r,t,C.jP),new T.bx(r,20,r,r),L.bc("I am an engineering student currently pursuing my B.Tech from NIT, Jaipur. I am a determined and motivated individual with a desire to constantly learn and try out new things.",r,$.nc(),C.a8),new T.dM(new V.a4(0,50,0,50),T.dQ(H.b([new T.cu(2,C.V,new T.dM(new V.a4(30,30,30,30),U.l2("https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/mobiledev.png"),r),r),new T.cu(3,C.V,new T.dM(new V.a4(30,0,30,0),T.cd(H.b([L.bc("Programmer and Developer",r,t,r),new T.bx(r,10,r,r),L.bc("I spend most of my time programming and developing software.",r,r,r),new T.bx(r,30,r,r),new U.uX(r),new T.bx(r,30,r,r),new T.dM(new V.a4(0,10,0,10),L.bc("I'm currently learning to make mobile, web and desktop apps using Flutter. And guess what? This web-app is made using the Flutter!",r,$.VB(),r),r)],s),C.c4,C.w,C.L),r),r)],s),C.t,C.w),r)],s),C.t,C.fM,C.L),C.j,r,r,r,this.d,r,new V.a4(40,40,40,40),r,q)}}
+return M.bp(r,T.cd(H.b([L.bc("About",r,t,C.jP),new T.bx(r,20,r,r),L.bc("I am an engineering student currently pursuing my B.Tech from NIT, Jaipur. I am a determined and motivated individual with a desire to constantly learn and try out new things.",r,$.nc(),C.a8),new T.dM(new V.a4(0,50,0,50),T.dQ(H.b([new T.cu(2,C.V,new T.dM(new V.a4(30,30,30,30),U.l2("https://raw.githubusercontent.com/KKshitiz/flutter-website/gh-pages/assets/assets/images/mobiledev.png"),r),r),new T.cu(3,C.V,new T.dM(new V.a4(30,0,30,0),T.cd(H.b([L.bc("Programmer and Developer",r,t,r),new T.bx(r,10,r,r),L.bc("I spend most of my time programming and developing software.",r,r,r),new T.bx(r,30,r,r),new U.uX(r),new T.bx(r,30,r,r),new T.dM(new V.a4(0,10,0,10),L.bc("I'm currently learning to make mobile, web and desktop apps using Flutter. And guess what? This web-app is made using the Flutter!",r,$.VB(),r),r)],s),C.c4,C.w,C.L),r),r)],s),C.t,C.w),r)],s),C.t,C.fM,C.L),C.j,r,r,r,this.d,r,new V.a4(40,40,40,40),r,q)}}
 U.uX.prototype={
 F:function(a){var t=null,s=u.t
 return T.dQ(H.b([T.cd(H.b([new U.e6("Birthday","9 Sep 2000",t),new U.e6("Website","www.example.com",t),new U.e6("Phone","+91 8948239724",t),new U.e6("City","Jaipur, RJ, India",t)],s),C.c4,C.w,C.L),T.cd(H.b([new U.e6("Age","20",t),new U.e6("Degree","B. Tech",t),new U.e6("Email","skilite007@gmail.com",t),new U.e6("Freelance","Available",t)],s),C.c4,C.w,C.L)],s),C.t,C.w)}}
@@ -40413,26 +40413,26 @@ F:function(a){var t=null
 return new T.dM(new V.a4(5,8,5,8),T.dQ(H.b([L.Iq(C.tO,C.aS,t),L.bc(this.c+": ",t,A.c6(t,t,C.l,t,t,t,t,t,t,t,t,t,t,C.b7,t,t,!0,t,t,t,t,t,t),t),L.bc(this.d,t,A.c6(t,t,C.l,t,t,t,t,t,t,t,t,t,t,t,t,t,!0,t,t,t,t,t,t),t)],u.t),C.t,C.w),t)}}
 V.uy.prototype={
 F:function(a){var t=null,s="Contact Me",r=u.t
-return M.bp(t,T.cd(H.b([L.bc(s,t,$.kr(),t),new T.bx(t,30,t,t),T.dQ(H.b([new T.cu(2,C.V,U.l2("https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/contact.png"),t),new T.cu(1,C.V,T.cd(H.b([L.bc("If you have any questions, suggestions, opportunities or just wanted to say Hello, feel free to contact me.",t,$.nc(),C.a8),new T.bx(t,40,t,t),new L.kD(new V.FA(),s,t)],r),C.t,C.w,C.L),t)],r),C.t,C.w)],r),C.t,C.w,C.L),t,t,t,t,this.d,t,new V.a4(50,60,50,60),t,this.c)}}
+return M.bp(t,T.cd(H.b([L.bc(s,t,$.kr(),t),new T.bx(t,30,t,t),T.dQ(H.b([new T.cu(2,C.V,U.l2("https://raw.githubusercontent.com/KKshitiz/flutter-website/gh-pages/assets/assets/images/contact.png"),t),new T.cu(1,C.V,T.cd(H.b([L.bc("If you have any questions, suggestions, opportunities or just wanted to say Hello, feel free to contact me.",t,$.nc(),C.a8),new T.bx(t,40,t,t),new L.kD(new V.FA(),s,t)],r),C.t,C.w,C.L),t)],r),C.t,C.w)],r),C.t,C.w,C.L),t,t,t,t,this.d,t,new V.a4(50,60,50,60),t,this.c)}}
 V.FA.prototype={
 $0:function(){G.Em()},
 $S:0}
 V.vc.prototype={
 F:function(a){var t=null,s=u.t
-return M.bp(t,T.cd(H.b([L.bc("Education",t,$.kr(),t),new T.bx(t,30,t,t),L.bc("My academic life",t,$.nc(),t),new T.bx(t,20,t,t),T.dQ(H.b([new T.cu(2,C.V,T.cd(H.b([new V.kU("B.Tech, NIT Jaipur","2nd year, 8.9 CGPA\nMember at ZINE Robotics and Research",t),new V.kU("ISC, Little Flower School","2018, 97.5% in science stream",t),new V.kU("ICSE, Little Flower School","2016, 95% in science stream",t)],s),C.t,C.w,C.L),t),new T.cu(3,C.V,M.bp(t,U.l2("https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/graduation.png"),t,t,t,t,t,t,t,t,t),t)],s),C.t,C.w)],s),C.t,C.w,C.L),C.j,t,t,t,this.d,t,new V.a4(50,60,50,60),t,this.c)}}
+return M.bp(t,T.cd(H.b([L.bc("Education",t,$.kr(),t),new T.bx(t,30,t,t),L.bc("My academic life",t,$.nc(),t),new T.bx(t,20,t,t),T.dQ(H.b([new T.cu(2,C.V,T.cd(H.b([new V.kU("B.Tech, NIT Jaipur","2nd year, 8.9 CGPA\nMember at ZINE Robotics and Research",t),new V.kU("ISC, Little Flower School","2018, 97.5% in science stream",t),new V.kU("ICSE, Little Flower School","2016, 95% in science stream",t)],s),C.t,C.w,C.L),t),new T.cu(3,C.V,M.bp(t,U.l2("https://raw.githubusercontent.com/KKshitiz/flutter-website/gh-pages/assets/assets/images/graduation.png"),t,t,t,t,t,t,t,t,t),t)],s),C.t,C.w)],s),C.t,C.w,C.L),C.j,t,t,t,this.d,t,new V.a4(50,60,50,60),t,this.c)}}
 V.kU.prototype={
 F:function(a){var t=null
 return M.bp(t,T.cd(H.b([L.bc(this.c,t,A.c6(t,t,C.l,t,t,t,t,t,t,t,t,25,t,t,t,t,!0,t,t,t,t,t,t),t),L.bc(this.d,!0,t,C.a8)],u.t),C.t,C.fM,C.L),t,t,t,t,t,new V.a4(20,20,20,20),t,t,t)}}
 V.vQ.prototype={
 F:function(a){var t=null,s=u.t
-return M.bp(t,T.cd(H.b([L.bc("Hobbies",t,$.kr(),t),new T.bx(t,30,t,t),L.bc("And that's how I utilize my spare time.",t,$.nc(),t),new T.bx(t,50,t,t),T.dQ(H.b([new T.cu(3,C.V,M.bp(t,U.l2("https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/hobbies.png"),t,t,t,t,t,t,t,t,t),t),new T.cu(2,C.V,T.cd(H.b([new V.ja("Playing Sudoku",C.tJ,t),new V.ja("Reading Books",C.tH,t),new V.ja("Finance and Business",C.tK,t),new V.ja("Designing",C.tI,t)],s),C.hU,C.w,C.L),t)],s),C.t,C.w)],s),C.t,C.w,C.L),t,t,t,t,this.d,t,new V.a4(50,30,50,30),t,this.c)}}
+return M.bp(t,T.cd(H.b([L.bc("Hobbies",t,$.kr(),t),new T.bx(t,30,t,t),L.bc("And that's how I utilize my spare time.",t,$.nc(),t),new T.bx(t,50,t,t),T.dQ(H.b([new T.cu(3,C.V,M.bp(t,U.l2("https://raw.githubusercontent.com/KKshitiz/flutter-website/gh-pages/assets/assets/images/hobbies.png"),t,t,t,t,t,t,t,t,t),t),new T.cu(2,C.V,T.cd(H.b([new V.ja("Playing Sudoku",C.tJ,t),new V.ja("Reading Books",C.tH,t),new V.ja("Finance and Business",C.tK,t),new V.ja("Designing",C.tI,t)],s),C.hU,C.w,C.L),t)],s),C.t,C.w)],s),C.t,C.w,C.L),t,t,t,t,this.d,t,new V.a4(50,30,50,30),t,this.c)}}
 V.ja.prototype={
 F:function(a){var t=null,s=L.Iq(this.d,C.O.h(0,700),t),r=C.O.h(0,700),q=new P.aZ(20,20)
 r=S.hA(t,new K.bk(q,q,q,q),H.b([new O.eJ(0,C.O.h(0,200),new P.t(0.2,1),15)],u.ec),r,t,t,C.a0)
 return M.bp(t,T.dQ(H.b([s,M.bp(t,L.bc(this.c,t,A.c6(t,t,C.j,t,t,t,t,t,t,t,t,t,t,t,t,t,!0,t,t,t,t,t,t),C.a8),t,t,r,t,t,new V.a4(20,0,20,0),new V.a4(20,20,20,20),t,200)],u.t),C.t,C.w),t,t,t,t,t,new V.a4(80,20,80,20),t,t,t)}}
 Q.vt.prototype={
 F:function(a){var t=null
-return M.bp(t,T.cd(H.b([new T.eK(C.a2,t,t,U.l2("https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/job.png"),t),new T.eK(C.a2,t,t,new T.dM(C.tj,L.bc("Hi, I'm Kshitiz Kamal",t,A.c6(t,t,C.l,t,t,t,t,t,t,t,t,50,t,C.b7,t,t,!0,t,t,t,t,t,t),t),t),t)],u.t),C.t,C.w,C.L),t,t,t,t,this.c,t,new V.a4(70,70,70,70),t,this.d)}}
+return M.bp(t,T.cd(H.b([new T.eK(C.a2,t,t,U.l2("https://raw.githubusercontent.com/KKshitiz/flutter-website/gh-pages/assets/assets/images/job.png"),t),new T.eK(C.a2,t,t,new T.dM(C.tj,L.bc("Hi, I'm Kshitiz Kamal",t,A.c6(t,t,C.l,t,t,t,t,t,t,t,t,50,t,C.b7,t,t,!0,t,t,t,t,t,t),t),t),t)],u.t),C.t,C.w,C.L),t,t,t,t,this.c,t,new V.a4(70,70,70,70),t,this.d)}}
 X.oD.prototype={
 aP:function(){return new X.rh(6,C.q)}}
 X.rh.prototype={
@@ -40476,9 +40476,9 @@ $0:function(){G.iC("https://www.github.com/KKshitiz")},
 $S:0}
 D.ym.prototype={
 F:function(a){var t=null,s=u.t
-return M.bp(t,T.cd(H.b([L.bc("Resume",t,$.kr(),t),new T.bx(t,30,t,t),T.dQ(H.b([new T.cu(2,C.V,T.cd(H.b([L.bc("Download my resume in pdf format from here.",t,$.nc(),C.a8),new T.bx(t,40,t,t),new L.kD(new D.LK(),"Download",t)],s),C.t,C.w,C.L),t),new T.cu(3,C.V,M.bp(t,U.l2("https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/resume.png"),t,t,t,t,t,t,t,t,t),t)],s),C.t,C.w)],s),C.t,C.w,C.L),C.j,t,t,t,this.d,t,new V.a4(50,30,50,30),t,this.c)}}
+return M.bp(t,T.cd(H.b([L.bc("Resume",t,$.kr(),t),new T.bx(t,30,t,t),T.dQ(H.b([new T.cu(2,C.V,T.cd(H.b([L.bc("Download my resume in pdf format from here.",t,$.nc(),C.a8),new T.bx(t,40,t,t),new L.kD(new D.LK(),"Download",t)],s),C.t,C.w,C.L),t),new T.cu(3,C.V,M.bp(t,U.l2("https://raw.githubusercontent.com/KKshitiz/flutter-website/gh-pages/assets/assets/images/resume.png"),t,t,t,t,t,t,t,t,t),t)],s),C.t,C.w)],s),C.t,C.w,C.L),C.j,t,t,t,this.d,t,new V.a4(50,30,50,30),t,this.c)}}
 D.LK.prototype={
-$0:function(){G.iC("https://github.com/KKshitiz/flutter-website/raw/master/assets/Resume.pdf")},
+$0:function(){G.iC("https://github.com/KKshitiz/flutter-website/raw/gh-pages/assets/assets/Resume.pdf")},
 $S:0}
 B.tZ.prototype={
 F:function(a){var t=null,s=new Y.fj($.a09(),10,C.R),r=S.hA(new F.bR(s,s,s,s),t,t,t,t,t,C.aP)
@@ -40507,7 +40507,7 @@ $0:function(){G.iC(this.a.e)},
 $S:0}
 M.yp.prototype={
 F:function(a){var t=null
-return T.xB(20,K.tQ(this.c,new M.LM(this),M.bp(t,new T.eK(C.a2,t,t,U.l2("https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/rotatingimage.png"),t),t,t,t,t,200,t,t,t,200)),t,t,t,20,t,t)}}
+return T.xB(20,K.tQ(this.c,new M.LM(this),M.bp(t,new T.eK(C.a2,t,t,U.l2("/rotatingimage.png"),t),t,t,t,t,200,t,t,t,200)),t,t,t,20,t,t)}}
 M.LM.prototype={
 $2:function(a,b){var t=this.a
 return new T.qr(E.WV(C.b.gbZ(t.c.d).x/t.d*2*3.141592653589793),C.a2,!0,b,null)},
@@ -44447,7 +44447,7 @@ return new N.DP(H.b(q,u.i),0,new N.IT(H.b([],u.o)),r,P.A(s,H.a6("dr<Bt*>*")),P.A
 t($,"a8U","a0d",function(){return new D.KJ($.a0c())})
 t($,"a8P","a0c",function(){return new D.C7(P.A(u.X,H.a6("ac<b2*>*(b2*)*")))})
 t($,"a8H","a08",function(){var s=null,r=S.hA(s,s,s,s,s,s,C.aP)
-return M.bp(s,new U.l1(D.a25("https://github.com/KKshitiz/flutter-website/blob/gh-pages/assets/assets/images/circle-avatar.png",s,1),C.n2,s),s,s,r,s,s,s,s,s,s)})
+return M.bp(s,new U.l1(D.a25("https://raw.githubusercontent.com/KKshitiz/flutter-website/gh-pages/assets/assets/images/circle-avatar.png",s,1),C.n2,s),s,s,r,s,s,s,s,s,s)})
 t($,"a8I","a09",function(){return P.a13(4282330924)})
 t($,"a8J","kr",function(){var s=null
 return A.c6(s,s,C.aS.h(0,700),s,s,s,s,s,s,s,s,40,s,C.b7,s,s,!0,s,s,s,s,s,s)})
