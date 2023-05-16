@@ -2,7 +2,7 @@
 
 Customizable portfolio website made in flutter<br>
 
-Website Link - [kshitizkamal.live](http://kshitizkamal.live/)
+Website Link - [kshitizkamal.in](https://v1.kshitizkamal.in/)
 
 ## Getting Started
 
