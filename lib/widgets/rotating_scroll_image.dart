@@ -4,13 +4,13 @@ import 'package:flutterportfoliowebsite/constants.dart';
 
 class RotatingImage extends StatelessWidget {
   const RotatingImage({
-    Key key,
-    @required this.scrollController,
-    @required this.screenWidth,
+    Key? key,
+    required this.scrollController,
+    required this.screenWidth,
   }) : super(key: key);
 
-  final ScrollController scrollController;
-  final double screenWidth;
+  final ScrollController? scrollController;
+  final double? screenWidth;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class RotatingImage extends StatelessWidget {
       right: 20,
       bottom: 20,
       child: AnimatedBuilder(
-        animation: scrollController,
+        animation: scrollController!,
         child: Container(
           width: 200.0,
           height: 200.0,
@@ -26,9 +26,9 @@ class RotatingImage extends StatelessWidget {
             child: Image.network('$kAssetUrl/rotating-image.png'),
           ),
         ),
-        builder: (BuildContext context, Widget child) {
+        builder: (BuildContext context, Widget? child) {
           return Transform.rotate(
-            angle: scrollController.offset / screenWidth * 2.0 * pi,
+            angle: scrollController!.offset / screenWidth! * 2.0 * pi,
             child: child,
           );
         },

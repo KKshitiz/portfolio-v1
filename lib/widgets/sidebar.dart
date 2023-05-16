@@ -131,14 +131,14 @@ class NavigationPane extends StatelessWidget {
 
 class NavigationTile extends StatelessWidget {
   NavigationTile({this.icon, this.label, this.isActive, this.onPress});
-  final IconData icon;
-  final String label;
-  final bool isActive;
-  final Function onPress;
+  final IconData? icon;
+  final String? label;
+  final bool? isActive;
+  final Function? onPress;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onPress,
+      onTap: onPress as void Function()?,
       child: Container(
         padding: EdgeInsets.all(15),
         child: Row(
@@ -146,14 +146,14 @@ class NavigationTile extends StatelessWidget {
           children: [
             Icon(
               icon,
-              color: isActive ? Colors.blue : Colors.grey,
+              color: isActive! ? Colors.blue : Colors.grey,
             ),
             Padding(
               padding: EdgeInsets.only(left: 10.0),
               child: Text(
-                label,
+                label!,
                 style: TextStyle(
-                    color: isActive ? Colors.white : Colors.grey,
+                    color: isActive! ? Colors.white : Colors.grey,
                     fontSize: 15,
                     letterSpacing: 1.0),
               ),
@@ -166,7 +166,7 @@ class NavigationTile extends StatelessWidget {
 }
 
 class SocialIcon extends StatelessWidget {
-  SocialIcon({@required this.icon, this.url});
+  SocialIcon({required this.icon, this.url});
   final IconData icon;
   final url;
 

@@ -4,13 +4,13 @@ import 'package:flutterportfoliowebsite/constants.dart';
 
 class SecondPage extends StatelessWidget {
   const SecondPage({
-    Key key,
-    @required this.screenWidth,
-    @required this.screenHeight,
+    Key? key,
+    required this.screenWidth,
+    required this.screenHeight,
   }) : super(key: key);
 
-  final double screenWidth;
-  final double screenHeight;
+  final double? screenWidth;
+  final double? screenHeight;
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +97,7 @@ class SecondPage extends StatelessWidget {
 
 class DetailRow extends StatelessWidget {
   const DetailRow({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -154,8 +154,8 @@ class DetailRow extends StatelessWidget {
 
 class DetailCard extends StatelessWidget {
   DetailCard({this.data, this.heading});
-  final String heading;
-  final String data;
+  final String? heading;
+  final String? data;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -171,7 +171,7 @@ class DetailCard extends StatelessWidget {
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
           ),
           Text(
-            data,
+            data!,
             style: TextStyle(
               color: Colors.black,
             ),

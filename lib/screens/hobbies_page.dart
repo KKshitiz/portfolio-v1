@@ -4,13 +4,13 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HobbiesPage extends StatelessWidget {
   const HobbiesPage({
-    Key key,
-    @required this.screenWidth,
-    @required this.screenHeight,
+    Key? key,
+    required this.screenWidth,
+    required this.screenHeight,
   }) : super(key: key);
 
-  final double screenWidth;
-  final double screenHeight;
+  final double? screenWidth;
+  final double? screenHeight;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -68,8 +68,8 @@ class HobbiesPage extends StatelessWidget {
 }
 
 class HobbieContainer extends StatelessWidget {
-  final String label;
-  final IconData icon;
+  final String? label;
+  final IconData? icon;
   HobbieContainer({this.label, this.icon});
   @override
   Widget build(BuildContext context) {
@@ -93,13 +93,13 @@ class HobbieContainer extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.blue[200],
+                    color: Colors.blue[200]!,
                     offset: Offset(0.2, 1.0),
                     blurRadius: 15,
                   ),
                 ]),
             child: Text(
-              label,
+              label!,
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.white),
             ),

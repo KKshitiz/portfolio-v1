@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
 
 class Avatar extends StatelessWidget {
-  Avatar({@required this.radius});
+  Avatar({required this.radius});
   final radius;
   @override
   Widget build(BuildContext context) {

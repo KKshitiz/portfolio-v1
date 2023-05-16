@@ -13,10 +13,10 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
   int noOfScreens = kNoOfScreens - 1;
   int currentScreen = 1;
-  double screenWidth;
-  double screenHeight;
-  double cWidth;
-  ScrollController scrollController;
+  double? screenWidth;
+  double? screenHeight;
+  double? cWidth;
+  ScrollController? scrollController;
 
   @override
   void dispose() {
@@ -28,24 +28,24 @@ class _LandingPageState extends State<LandingPage> {
   void initState() {
     super.initState();
     scrollController = ScrollController();
-    scrollController.addListener(onScroll);
+    scrollController!.addListener(onScroll);
   }
 
   onScroll() {
     setState(() {
       cWidth =
-          scrollController.offset * screenWidth / (noOfScreens * screenHeight);
-      if (scrollController.offset < screenHeight)
+          scrollController!.offset * screenWidth! / (noOfScreens * screenHeight!);
+      if (scrollController!.offset < screenHeight!)
         currentScreen = 1;
-      else if (scrollController.offset < 2 * screenHeight)
+      else if (scrollController!.offset < 2 * screenHeight!)
         currentScreen = 2;
-      else if (scrollController.offset < 3 * screenHeight)
+      else if (scrollController!.offset < 3 * screenHeight!)
         currentScreen = 3;
-      else if (scrollController.offset < 4 * screenHeight)
+      else if (scrollController!.offset < 4 * screenHeight!)
         currentScreen = 4;
-      else if (scrollController.offset < 5 * screenHeight)
+      else if (scrollController!.offset < 5 * screenHeight!)
         currentScreen = 5;
-      else if (scrollController.offset < 6 * screenHeight)
+      else if (scrollController!.offset < 6 * screenHeight!)
         currentScreen = 6;
       else
         currentScreen = 7;

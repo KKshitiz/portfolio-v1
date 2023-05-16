@@ -3,13 +3,13 @@ import 'package:flutterportfoliowebsite/constants.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({
-    Key key,
-    @required this.screenHeight,
-    @required this.screenWidth,
+    Key? key,
+    required this.screenHeight,
+    required this.screenWidth,
   }) : super(key: key);
 
-  final double screenHeight;
-  final double screenWidth;
+  final double? screenHeight;
+  final double? screenWidth;
 
   @override
   Widget build(BuildContext context) {

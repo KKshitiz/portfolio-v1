@@ -9,15 +9,15 @@ import 'package:flutterportfoliowebsite/screens/resume_page.dart';
 
 class PageListView extends StatelessWidget {
   const PageListView({
-    Key key,
-    @required this.scrollController,
-    @required this.screenHeight,
-    @required this.screenWidth,
+    Key? key,
+    required this.scrollController,
+    required this.screenHeight,
+    required this.screenWidth,
   }) : super(key: key);
 
-  final ScrollController scrollController;
-  final double screenHeight;
-  final double screenWidth;
+  final ScrollController? scrollController;
+  final double? screenHeight;
+  final double? screenWidth;
 
   @override
   Widget build(BuildContext context) {

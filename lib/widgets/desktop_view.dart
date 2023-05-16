@@ -6,18 +6,18 @@ import 'sidebar.dart';
 
 class DesktopView extends StatelessWidget {
   const DesktopView({
-    Key key,
-    @required this.scrollController,
-    @required this.screenHeight,
-    @required this.screenWidth,
-    @required this.cWidth,
-    @required this.currentScreen,
+    Key? key,
+    required this.scrollController,
+    required this.screenHeight,
+    required this.screenWidth,
+    required this.cWidth,
+    required this.currentScreen,
   }) : super(key: key);
 
-  final ScrollController scrollController;
-  final double screenHeight;
-  final double screenWidth;
-  final double cWidth;
+  final ScrollController? scrollController;
+  final double? screenHeight;
+  final double? screenWidth;
+  final double? cWidth;
   final int currentScreen;
 
   @override

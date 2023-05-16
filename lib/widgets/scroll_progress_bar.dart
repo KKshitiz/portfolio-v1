@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class ScrollProgressBar extends StatelessWidget {
   const ScrollProgressBar({
-    Key key,
-    @required this.cWidth,
+    Key? key,
+    required this.cWidth,
   }) : super(key: key);
 
-  final double cWidth;
+  final double? cWidth;
 
   @override
   Widget build(BuildContext context) {

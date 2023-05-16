@@ -3,13 +3,13 @@ import 'package:flutterportfoliowebsite/constants.dart';
 
 class EducationPage extends StatelessWidget {
   const EducationPage({
-    Key key,
-    @required this.screenWidth,
-    @required this.screenHeight,
+    Key? key,
+    required this.screenWidth,
+    required this.screenHeight,
   }) : super(key: key);
 
-  final double screenWidth;
-  final double screenHeight;
+  final double? screenWidth;
+  final double? screenHeight;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -68,8 +68,8 @@ class EducationPage extends StatelessWidget {
 }
 
 class EducationTile extends StatelessWidget {
-  final String mainText;
-  final String subText;
+  final String? mainText;
+  final String? subText;
   EducationTile({this.mainText, this.subText});
   @override
   Widget build(BuildContext context) {
@@ -79,7 +79,7 @@ class EducationTile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            mainText,
+            mainText!,
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.black,
@@ -87,7 +87,7 @@ class EducationTile extends StatelessWidget {
             ),
           ),
           Text(
-            subText,
+            subText!,
             textAlign: TextAlign.center,
             softWrap: true,
           ),
