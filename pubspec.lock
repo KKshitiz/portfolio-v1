@@ -204,10 +204,10 @@ packages:
     dependency: "direct main"
     description:
       name: responsive_builder
-      sha256: e23ef8ce1191f878dd50d28f1496d659fc923718dbfd407b121bb167f95ba090
+      sha256: "8eed603781a53fe1804a9ba50089ceb4882887f9c5b84ff139b03d8583a12fc9"
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.4"
+    version: "0.5.1"
   sky_engine:
     dependency: transitive
     description: flutter
