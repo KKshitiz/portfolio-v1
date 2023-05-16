@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BlueButton extends StatelessWidget {
-  BlueButton({this.onTap, this.text});
+  const BlueButton({Key? key, this.onTap, this.text}) : super(key: key);
   final Function? onTap;
   final String? text;
   @override
@@ -9,8 +9,8 @@ class BlueButton extends StatelessWidget {
     return TextButton(
       onPressed: onTap as void Function()?,
       style: TextButton.styleFrom(
-        padding: EdgeInsets.symmetric(horizontal: 60, vertical: 20),
-        textStyle: TextStyle(
+        padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 20),
+        textStyle: const TextStyle(
           color: Colors.white,
         ),
         backgroundColor: Colors.blue[700],

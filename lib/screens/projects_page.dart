@@ -16,7 +16,7 @@ class ProjectsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(30),
+      padding: const EdgeInsets.all(30),
       height: screenHeight,
       width: screenWidth,
       child: Column(
@@ -38,10 +38,10 @@ class ProjectsPage extends StatelessWidget {
             },
           ),
           Container(
-            margin: EdgeInsets.symmetric(vertical: 30),
+            margin: const EdgeInsets.symmetric(vertical: 30),
             child: Column(
               children: [
-                Row(children: [
+                Row(children: const [
                   ProjectCard(
                     projectTitle: 'Algorithm Visualizer',
                     projectDescription:
@@ -61,7 +61,7 @@ class ProjectsPage extends StatelessWidget {
                     url: 'https://kkshitiz.github.io/Serial-clicker/',
                   ),
                 ]),
-                Row(children: [
+                Row(children: const [
                   ProjectCard(
                     projectTitle: 'Actroid',
                     projectDescription:

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -6,23 +5,23 @@ import 'package:flutterportfoliowebsite/services/launch_url.dart';
 import 'package:flutterportfoliowebsite/widgets/avatar_widget.dart';
 
 class SideBar extends StatelessWidget {
-  SideBar(this.currentScreen);
+  const SideBar(this.currentScreen, {Key? key}) : super(key: key);
   final int currentScreen;
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20),
-      decoration: BoxDecoration(color: Colors.black),
+      padding: const EdgeInsets.all(20),
+      decoration: const BoxDecoration(color: Colors.black),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Avatar(
+          const Avatar(
             radius: 50,
           ),
           Text(
             kAvatarName,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 25,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -61,9 +60,9 @@ class SideBar extends StatelessWidget {
               Text(
                 '© Copyright $kAvatarName',
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
               ),
-              Text(
+              const Text(
                 'Designed by KKshitiz',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white),
@@ -77,7 +76,7 @@ class SideBar extends StatelessWidget {
 }
 
 class NavigationPane extends StatelessWidget {
-  NavigationPane(this.currentScreen);
+  const NavigationPane(this.currentScreen, {Key? key}) : super(key: key);
   final int currentScreen;
   @override
   Widget build(BuildContext context) {
@@ -130,7 +129,7 @@ class NavigationPane extends StatelessWidget {
 }
 
 class NavigationTile extends StatelessWidget {
-  NavigationTile({this.icon, this.label, this.isActive, this.onPress});
+  const NavigationTile({Key? key, this.icon, this.label, this.isActive, this.onPress}) : super(key: key);
   final IconData? icon;
   final String? label;
   final bool? isActive;
@@ -140,7 +139,7 @@ class NavigationTile extends StatelessWidget {
     return GestureDetector(
       onTap: onPress as void Function()?,
       child: Container(
-        padding: EdgeInsets.all(15),
+        padding: const EdgeInsets.all(15),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -149,7 +148,7 @@ class NavigationTile extends StatelessWidget {
               color: isActive! ? Colors.blue : Colors.grey,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 10.0),
+              padding: const EdgeInsets.only(left: 10.0),
               child: Text(
                 label!,
                 style: TextStyle(
@@ -166,7 +165,7 @@ class NavigationTile extends StatelessWidget {
 }
 
 class SocialIcon extends StatelessWidget {
-  SocialIcon({required this.icon, this.url});
+  const SocialIcon({Key? key, required this.icon, this.url}) : super(key: key);
   final IconData icon;
   final url;
 
@@ -177,8 +176,8 @@ class SocialIcon extends StatelessWidget {
         onPressed: () {
           launchUrlBrowser(url);
         },
-        shape: CircleBorder(),
-        fillColor: Color(0xff312421),
+        shape: const CircleBorder(),
+        fillColor: const Color(0xff312421),
         hoverColor: Colors.blue,
         child: Icon(
           icon,

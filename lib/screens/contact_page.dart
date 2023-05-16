@@ -17,14 +17,14 @@ class ContactPage extends StatelessWidget {
     return Container(
       height: screenHeight,
       width: screenWidth,
-      padding: EdgeInsets.symmetric(horizontal: 50, vertical: 60),
+      padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 60),
       child: Column(
         children: [
           Text(
             'Contact Me',
             style: kMainHeading,
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Row(
@@ -44,7 +44,7 @@ class ContactPage extends StatelessWidget {
                       textAlign: TextAlign.center,
                       style: kSubHeading,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     BlueButton(

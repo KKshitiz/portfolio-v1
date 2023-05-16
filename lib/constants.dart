@@ -4,7 +4,7 @@ String kAssetUrl =
     'https://raw.githubusercontent.com/KKshitiz/flutter-website/gh-pages/assets/assets/images';
 //avatar
 var kAvatarImage = Container(
-  decoration: BoxDecoration(shape: BoxShape.circle),
+  decoration: const BoxDecoration(shape: BoxShape.circle),
   child: Image(
     fit: BoxFit.contain,
     image: NetworkImage('$kAssetUrl/circle-avatar.png'),
@@ -13,7 +13,7 @@ var kAvatarImage = Container(
 String kAvatarName = "Kshitiz Kamal";
 double kAvatarRadius = 50.0;
 double kBorderWidth = 10.0;
-Color kBorderColor = Color(0xff3f2f2c);
+Color kBorderColor = const Color(0xff3f2f2c);
 
 //social
 //Insert you profile links

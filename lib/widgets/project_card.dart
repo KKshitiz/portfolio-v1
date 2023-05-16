@@ -3,7 +3,7 @@ import 'package:flutterportfoliowebsite/constants.dart';
 import 'package:flutterportfoliowebsite/services/launch_url.dart';
 
 class ProjectCard extends StatelessWidget {
-  ProjectCard({this.projectTitle, this.url, this.projectDescription});
+  const ProjectCard({Key? key, this.projectTitle, this.url, this.projectDescription}) : super(key: key);
   final projectTitle;
   final projectDescription;
   final url;
@@ -11,12 +11,12 @@ class ProjectCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        margin: EdgeInsets.all(20),
-        padding: EdgeInsets.all(20),
+        margin: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
-            boxShadow: [
+            boxShadow: const [
               BoxShadow(
                 color: Colors.grey,
                 offset: Offset(0.2, 1.0),
@@ -29,13 +29,13 @@ class ProjectCard extends StatelessWidget {
           children: [
             Text(
               projectTitle,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.w500,
                 fontSize: 20,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(
@@ -44,7 +44,7 @@ class ProjectCard extends StatelessWidget {
               textAlign: TextAlign.center,
               softWrap: true,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             GestureDetector(

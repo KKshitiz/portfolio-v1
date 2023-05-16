@@ -30,7 +30,7 @@ class FirstPage extends StatelessWidget {
             flex: 1,
             child: Text(
               'Hi, I\'m $kAvatarName',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 50,
                 color: Colors.black,
                 fontWeight: FontWeight.bold,

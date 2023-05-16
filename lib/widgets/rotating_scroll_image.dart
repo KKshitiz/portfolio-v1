@@ -19,7 +19,7 @@ class RotatingImage extends StatelessWidget {
       bottom: 20,
       child: AnimatedBuilder(
         animation: scrollController!,
-        child: Container(
+        child: SizedBox(
           width: 200.0,
           height: 200.0,
           child: Center(

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flutterportfoliowebsite/constants.dart';
 import 'package:flutterportfoliowebsite/widgets/desktop_view.dart';
 import 'not_supported.dart';
 
 class LandingPage extends StatefulWidget {
+  const LandingPage({Key? key}) : super(key: key);
+
   @override
   _LandingPageState createState() => _LandingPageState();
 }
@@ -35,20 +36,21 @@ class _LandingPageState extends State<LandingPage> {
     setState(() {
       cWidth =
           scrollController!.offset * screenWidth! / (noOfScreens * screenHeight!);
-      if (scrollController!.offset < screenHeight!)
+      if (scrollController!.offset < screenHeight!) {
         currentScreen = 1;
-      else if (scrollController!.offset < 2 * screenHeight!)
+      } else if (scrollController!.offset < 2 * screenHeight!) {
         currentScreen = 2;
-      else if (scrollController!.offset < 3 * screenHeight!)
+      } else if (scrollController!.offset < 3 * screenHeight!) {
         currentScreen = 3;
-      else if (scrollController!.offset < 4 * screenHeight!)
+      } else if (scrollController!.offset < 4 * screenHeight!) {
         currentScreen = 4;
-      else if (scrollController!.offset < 5 * screenHeight!)
+      } else if (scrollController!.offset < 5 * screenHeight!) {
         currentScreen = 5;
-      else if (scrollController!.offset < 6 * screenHeight!)
+      } else if (scrollController!.offset < 6 * screenHeight!) {
         currentScreen = 6;
-      else
+      } else {
         currentScreen = 7;
+      }
     });
   }
 
@@ -72,7 +74,7 @@ class _LandingPageState extends State<LandingPage> {
           cWidth: cWidth,
           currentScreen: currentScreen,
         ),
-        mobile: NotSupported(),
+        mobile: const NotSupported(),
       ),
     );
   }

@@ -16,7 +16,7 @@ class HobbiesPage extends StatelessWidget {
     return Container(
       height: screenHeight,
       width: screenWidth,
-      padding: EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -39,7 +39,7 @@ class HobbiesPage extends StatelessWidget {
                 flex: 2,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
+                  children: const [
                     HobbieContainer(
                       label: 'Playing Sudoku',
                       icon: FontAwesomeIcons.cube,
@@ -70,11 +70,11 @@ class HobbiesPage extends StatelessWidget {
 class HobbieContainer extends StatelessWidget {
   final String? label;
   final IconData? icon;
-  HobbieContainer({this.label, this.icon});
+  const HobbieContainer({Key? key, this.label, this.icon}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20),
+      margin: const EdgeInsets.symmetric(vertical: 20),
 //      alignment: Alignment.centerRight,
 //      color: Colors.red,
       child: Row(
@@ -86,22 +86,22 @@ class HobbieContainer extends StatelessWidget {
           ),
           Container(
             width: 200,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            padding: EdgeInsets.all(20),
+            margin: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
                 color: Colors.blue[700],
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.blue[200]!,
-                    offset: Offset(0.2, 1.0),
+                    offset: const Offset(0.2, 1.0),
                     blurRadius: 15,
                   ),
                 ]),
             child: Text(
               label!,
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             ),
           ),
         ],

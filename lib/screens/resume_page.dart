@@ -18,14 +18,14 @@ class ResumePage extends StatelessWidget {
       height: screenHeight,
       width: screenWidth,
       color: Colors.white,
-      padding: EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
       child: Column(
         children: [
           Text(
             'Resume',
             style: kMainHeading,
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Row(
@@ -41,7 +41,7 @@ class ResumePage extends StatelessWidget {
                       textAlign: TextAlign.center,
                       style: kSubHeading,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     BlueButton(

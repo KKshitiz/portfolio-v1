@@ -16,7 +16,7 @@ class EducationPage extends StatelessWidget {
       height: screenHeight,
       width: screenWidth,
       color: Colors.white,
-      padding: EdgeInsets.symmetric(horizontal: 50, vertical: 60),
+      padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 60),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -36,7 +36,7 @@ class EducationPage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   mainAxisSize: MainAxisSize.max,
-                  children: [
+                  children: const [
                     EducationTile(
                       mainText: 'B.Tech, NIT Jaipur',
                       subText:
@@ -70,18 +70,18 @@ class EducationPage extends StatelessWidget {
 class EducationTile extends StatelessWidget {
   final String? mainText;
   final String? subText;
-  EducationTile({this.mainText, this.subText});
+  const EducationTile({Key? key, this.mainText, this.subText}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(20),
+      margin: const EdgeInsets.all(20),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             mainText!,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.black,
               fontSize: 25,
             ),
